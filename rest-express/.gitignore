@@ -1,2 +1,2 @@
 dist
-knex/dev.sqlite3
+dev.sqlite3
