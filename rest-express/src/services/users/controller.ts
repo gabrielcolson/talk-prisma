@@ -1,4 +1,4 @@
-import knex from '../config/knex';
+import knex from '../../config/knex';
 import { User } from './User';
 
 const getAll = async (): Promise<User[]> => {
@@ -14,15 +14,15 @@ const getOne = async (userId: string): Promise<User> => {
     .first();
 };
 
-const create = async (firstname: string, lastname: string): Promise<null> => {
+const create = async (firstname: string, lastname: string): Promise<void> => {
   return knex('users')
     .insert({
       firstname,
       lastname,
-    })
+    });
 };
 
-const remove = async (userId: string): Promise<null> => {
+const remove = async (userId: string): Promise<void> => {
   return knex('users')
     .where({ id: userId })
     .del()
