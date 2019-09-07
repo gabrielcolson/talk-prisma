@@ -51,4 +51,4 @@ export {
   getPostByAuthor,
   createPost,
   removePost,
-}
+};

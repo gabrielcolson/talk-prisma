@@ -1,11 +1,11 @@
 import { Router } from 'express';
 
 import {
-  getPosts,
+  createPost,
   getPost,
   getPostByAuthor,
-  createPost,
-  removePost
+  getPosts,
+  removePost,
 } from './middlewares';
 
 const router = Router();
