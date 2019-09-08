@@ -1,7 +1,7 @@
-import express, {Request, Response} from 'express';
+import express, { Request, Response } from 'express';
 
-import userRouter from './services/users/routes';
 import postRouter from './services/posts/routes';
+import userRouter from './services/users/routes';
 
 const app = express();
 

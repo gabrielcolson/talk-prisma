@@ -18,8 +18,8 @@ const getByAuthor = async (authorId: string): Promise<Post[]> => {
 const create = async (author: string, title: string, content: string): Promise<void> => {
   return knex('posts').insert({
     author,
-    title,
     content,
+    title,
   });
 };
 
