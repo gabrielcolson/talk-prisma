@@ -1,0 +1,29 @@
+type User {
+  id: ID
+  firstname: String
+  lastname: String
+}
+
+type Post {
+  id: ID
+  author: ID
+  title: String
+  content: String
+}
+
+type Query {
+  users: [User]
+  user(id: ID!): User
+
+  posts: [Post]
+  postsOf(authorId: ID): [Post]
+  post(id: ID!): Post
+}
+
+type Mutation {
+  addUser(firstname: String!, lastname: String!): Boolean
+  deleteUser(id: ID!): Boolean
+
+  addPost(authorId: ID!, title: String!, content: String!): Boolean
+  deletePost(id: ID!): Boolean
+}
