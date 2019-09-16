@@ -13,6 +13,8 @@ const Query = prismaObjectType({
     t.prismaFields([
       'post',
       'posts',
+      'user',
+      'users',
     ]);
   },
 });
@@ -22,8 +24,10 @@ const Mutation = prismaObjectType({
   definition(t) {
     t.prismaFields([
       'createUser',
-      'deletePost',
+      'deleteUser',
       'createPost',
+      'deletePost',
+      'updatePost',
     ]);
     t.field('deletePostsOf', {
       type: 'BatchPayload',
@@ -47,8 +51,8 @@ const schema = makePrismaSchema({
   },
 
   outputs: {
-    schema: path.join(__dirname, './src/generated/schema.graphql'),
-    typegen: path.join(__dirname, './src/generated/nexus.ts'),
+    schema: path.join(__dirname, 'generated/schema.graphql'),
+    typegen: path.join(__dirname, 'generated/nexus.ts'),
   },
 });
 
