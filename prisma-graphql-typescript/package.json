@@ -17,15 +17,15 @@
     "eslint": "^6.4.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "ts-node": "^8.3.0",
-    "ts-node-dev": "^1.0.0-pre.42",
-    "typescript": "^3.6.3"
+    "ts-node-dev": "^1.0.0-pre.42"
   },
   "dependencies": {
     "graphql": "^14.5.4",
     "graphql-yoga": "^1.18.3",
     "nexus": "^0.11.7",
     "nexus-prisma": "^0.3.8",
-    "prisma-client-lib": "^1.34.8"
+    "prisma-client-lib": "^1.34.8",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.3"
   }
 }
